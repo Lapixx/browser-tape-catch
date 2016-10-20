@@ -3,7 +3,8 @@ var global = require('global')
 var tests = require('./manager')()
 var harness
 
-exports = module.exports = tape
+var wrapper = window.tapExtension ? window.tapExtension(tape) : tape;
+exports = module.exports = wrapper
 
 // Maintain tape@1 compatibility
 var _end = (

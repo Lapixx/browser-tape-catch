@@ -1,5 +1,5 @@
 {
-  "name": "tape-catch",
+  "name": "browser-tape-catch",
   "version": "1.0.6",
   "description": "a wrapper around tape that catches and reports exceptions",
   "main": "index.js",
